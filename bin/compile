@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Instalar dependencias de Python
+pip install -r requirements.txt
+
+# Navegar a la carpeta 'client'
+cd client
+
+# Instalar dependencias de Node.js
+npm install 
+
+# Construir la aplicación React
+npm run build
+
+# Volver a la raíz del proyecto
+cd ..
