@@ -1,4 +1,16 @@
-#!/usr/bin/env bash
+echo "Checking for client/package.json..."
+if [ -f "client/package.json" ]; then
+  echo "client/package.json found!"
+else
+  echo "client/package.json not found."
+fi
+
+echo "Checking for requirements.txt..."
+if [ -f "requirements.txt" ]; then
+  echo "requirements.txt found!"
+else
+  echo "requirements.txt not found."
+fi
 
 if [ -f "client/package.json" ] && [ -f "requirements.txt" ]; then
   exit 0
